@@ -30,11 +30,11 @@ header{
 nav{
     min-height: 8vh;
     margin: auto;
-    width: 92.5%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+   
     top: 0;
     left: 2.5% ;
     z-index: 200;
@@ -158,6 +158,9 @@ img{
 
 .links{
     width: 100vh;
+    position: relative;
+    margin-top: 5%;
+    
 }
 .links ul{
     display: flex;
@@ -166,7 +169,7 @@ img{
     margin-left: 5%;
 }
 .links a {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
 }
 #slink{
@@ -175,11 +178,15 @@ img{
    
 }
 .anim{
-    font-size: 2rem;
-    color: white;
-    margin-top: -30%;
-    margin-left: -30%;
+    position: absolute;
+    top: 30%;
     
+    font-size: 2rem;
+    color: yellow;
+    -webkit-text-stroke-color: black ;
+    -webkit-text-stroke-width: 1px;
+    font-weight: 700;
+    text-align: center;
     transition: all 0.3s;
     opacity: 0;
 }
@@ -346,3 +353,7 @@ textarea{
     .nav ul {
         font-size: 0.8rem;
     }
+    .anim{
+        font-size: 0.8rem;
+    }
+}
